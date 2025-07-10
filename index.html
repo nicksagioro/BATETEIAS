@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BATETEIAS</title>
+</head>
+
+<body>
+    <main>
+        <div class="background"></div>
+        <div class="particles" id="particles"></div>
+
+        <div class="notification" id="notification">
+            Ação realizada com sucesso!
+        </div>
+
+        <header>
+            <div class="logo-container">
+                <div class="logo"><img src="logo.jpg" alt="Bateteias FC Logo"></div>
+            </div>
+            <h1>BATETEIAS FC</h1>
+            <p class="subtitle">Time de amigos online</p>
+        </header>
+
+        <main>
+            <section class="content-section">
+                <h2>🎮 Sobre o Bateteias</h2>
+                <p>O Bateteias é um time de amigos online que se reúne para jogar e se divertir. Somos uma comunidade
+                    unida pela paixão por games, onde cada membro contribui com sua personalidade única para criar
+                    momentos inesquecíveis.</p>
+                <p>Nosso objetivo é mais do que apenas vencer partidas - queremos construir amizades duradouras e
+                    proporcionar diversão para todos os integrantes do time.</p>
+
+                <div class="button-group">
+                    <button class="interactive-btn"
+                        onclick="window.open('https://chat.whatsapp.com/C1L0UgWgsRDH1soMvpqpQZ','_blank')">🎯 Junte-se
+                        ao Time</button>
+                    <button class="interactive-btn" onclick="window.open('https://discord.gg/aSaADHWx', '_blank')">💬
+                        Discord</button>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📊 Estatísticas do Time</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">25+</span>
+                        <div class="stat-label">Jogadores Ativos</div>
+                    </div>
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">150+</span>
+                        <div class="stat-label">Partidas Jogadas</div>
+                    </div>
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">3</span>
+                        <div class="stat-label">Anos de História</div>
+                    </div>
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">∞</span>
+                        <div class="stat-label">Diversão Garantida</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🏆 Jogos </h2>
+                <p><strong>EA SPORTS FC 25</strong></p>
+                <p><strong>COUNTER STRIKE 2</strong></p>
+                <p><strong>Free Fire</strong></p>
+                <p><strong>VALORANT</strong></p>
+                <p><strong>PUBG</strong></p>
+                <p><strong>Call of Duty</strong></p>
+                <p><strong>FiveM</strong></p>
+                <p><strong>Fortnite</strong></p>
+                <p><strong>REEPO</strong></p>
+                <p><strong>THE CREW</strong></p>
+                <p><strong>EURO TRUCK</strong></p>
+                <p><strong>THE FOREST</strong></p>
+
+                <div class="button-group">
+                    <button class="interactive-btn" onclick="showEvents()">🎉 Eventos</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Bateteias FC - Team</p>
+        </footer>
+
+        <script src="botoes.js"></script>
+
+</body>
+
+</html>
