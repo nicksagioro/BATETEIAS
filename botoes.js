@@ -147,8 +147,7 @@
             button.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
             });
-=======
-// Create animated particles
+        });
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 50;
@@ -303,5 +302,4 @@
             button.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
             });
->>>>>>> cc06a66551b95586e2a773a92540669e1e964559
         });
