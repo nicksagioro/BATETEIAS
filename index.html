@@ -1,122 +1,118 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>BATETEIAS</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BATETEIAS</title>
+</head>
 
-    <body>
-        <main>
-            <div class="background"></div>
-            <div class="particles" id="particles"></div>
+<body>
+    <main>
+        <div class="background"></div>
+        <div class="particles" id="particles"></div>
 
-            <div class="notification" id="notification">
-                Ação realizada com sucesso!
+        <div class="notification" id="notification">
+            Ação realizada com sucesso!
+        </div>
+
+        <header>
+            <div class="logo-container">
+                <div class="logo"><img src="logo.jpg" alt="Bateteias FC Logo"></div>
             </div>
+            <h1>BATETEIAS</h1>
+            <p class="subtitle">Equipe BTT</p>
+        </header>
 
-            <header>
-                <div class="logo-container">
-                    <div class="logo"><img src="logo.jpg" alt="Bateteias FC Logo"></div>
+        <main>
+            <section class="content-section">
+                <h2>🎮 Sobre o Bateteias</h2>
+                <p>O Bateteias é um time de amigos online que a grande maioria dos membros se conhece pessoalmente.</p>
+                <p>Equipe BTT é feita para dar boas risadas e criar um momento no dia de distração, rindo um dos outros
+                    ou nos jogos que jogamos.</p>
+
+                <div class="button-group">
+                    <button class="interactive-btn" onclick="window.open('https://discord.gg/BzmZ2AcKqB', '_blank')">💬
+                        Discord</button>
                 </div>
-                <h1>BATETEIAS</h1>
-                <p class="subtitle">Equipe BTT</p>
-            </header>
+            </section>
 
-            <main>
-                <section class="content-section">
-                    <h2>🎮 Sobre o Bateteias</h2>
-                    <p>O Bateteias é um time de amigos online que a grande maioria dos membros se conhece pessoalmente.</p>
-                    <p>Equipe BTT é feita para dar boas risadas e criar um momento no dia de distração, rindo um dos outros ou nos jogos que jogamos.</p>
-
-                    <div class="button-group">
-                        <button class="interactive-btn"
-                            onclick="window.open('https://chat.whatsapp.com/C1L0UgWgsRDH1soMvpqpQZ','_blank')">🎯
-                            Junte-se
-                            ao Time</button>
-                        <button class="interactive-btn"
-                            onclick="window.open('https://discord.gg/BzmZ2AcKqB', '_blank')">💬
-                            Discord</button>
+            <section class="content-section">
+                <h2>📊 Estatísticas do Time</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">25+</span>
+                        <div class="stat-label">Jogadores Ativos</div>
                     </div>
-                </section>
-
-                <section class="content-section">
-                    <h2>📊 Estatísticas do Time</h2>
-                    <div class="stats-grid">
-                        <div class="stat-card" onclick="animateStats(this)">
-                            <span class="stat-number">25+</span>
-                            <div class="stat-label">Jogadores Ativos</div>
-                        </div>
-                        <div class="stat-card" onclick="animateStats(this)">
-                            <span class="stat-number">150+</span>
-                            <div class="stat-label">Partidas Jogadas</div>
-                        </div>
-                        <div class="stat-card" onclick="animateStats(this)">
-                            <span class="stat-number">3</span>
-                            <div class="stat-label">Anos de História</div>
-                        </div>
-                        <div class="stat-card" onclick="animateStats(this)">
-                            <span class="stat-number">∞</span>
-                            <div class="stat-label">Diversão Garantida</div>
-                        </div>
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">150+</span>
+                        <div class="stat-label">Partidas Jogadas</div>
                     </div>
-                </section>
-
-                <section class="content-section">
-                    <h2>🌟 Nossos Membros</h2>
-                    <p>Conheça alguns dos nossos jogadores:</p>
-                    <ul class="member-list">
-                        <li>Nicolas ( NicK )</li>
-                        <li>Guilherme ( Pagodi )</li>
-                        <li>Vitor ( Vitin )</li>
-                        <li>Rafael ( Coutinho )</li>
-                        <li>Samuel ( Samel ) </li>
-                        <li>Yago ( Vaguin )</li>
-                        <li>Pedro Henrique ( Ph MyTwoBalls )</li>
-                        <li>Marcelo Lorenzo ( Lz )</li>
-                        <li>Guilherme P ( Gui Patrão )</li>
-                        <li>Lucas ( Lukinhas )</li>
-                        <li>Werik ( RicK )</li>
-                        <li>Diego ( Calango )</li>
-                        <li>Gabriel ( Dog )</li>
-                        <li>Vitor Hugo ( VT )</li>
-                    </ul>
-
-                    <div class="button-group">
-                        <button class="interactive-btn" onclick="showMembers()">👥 Ver Todos os Membros</button>
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">3</span>
+                        <div class="stat-label">Anos de História</div>
                     </div>
-                </section>
-
-                <section class="content-section">
-                    <h2>🏆 Jogos </h2>
-                    <p><strong>EA SPORTS FC 25</strong></p>
-                    <p><strong>COUNTER STRIKE 2</strong></p>
-                    <p><strong>Free Fire</strong></p>
-                    <p><strong>VALORANT</strong></p>
-                    <p><strong>PUBG</strong></p>
-                    <p><strong>Call of Duty</strong></p>
-                    <p><strong>FiveM</strong></p>
-                    <p><strong>Fortnite</strong></p>
-                    <p><strong>REEPO</strong></p>
-                    <p><strong>THE CREW</strong></p>
-                    <p><strong>EURO TRUCK</strong></p>
-                    <p><strong>THE FOREST</strong></p>
-
-                    <div class="button-group">
-                        <button class="interactive-btn" onclick="showEvents()">🎉 Eventos</button>
+                    <div class="stat-card" onclick="animateStats(this)">
+                        <span class="stat-number">∞</span>
+                        <div class="stat-label">Diversão Garantida</div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-            </main>
+            <section class="content-section">
+                <h2>🌟 Nossos Membros</h2>
+                <p>Conheça alguns dos nossos jogadores:</p>
+                <ul class="member-list">
+                    <li>Nicolas ( NicK )</li>
+                    <li>Guilherme ( Pagodi )</li>
+                    <li>Vitor ( Vitin )</li>
+                    <li>Rafael ( Coutinho )</li>
+                    <li>Samuel ( Samel ) </li>
+                    <li>Yago ( Vaguin )</li>
+                    <li>Pedro Henrique ( Ph MyTwoBalls )</li>
+                    <li>Marcelo Lorenzo ( Lz )</li>
+                    <li>Guilherme P ( Gui Patrão )</li>
+                    <li>Lucas ( Lukinhas )</li>
+                    <li>Werik ( RicK )</li>
+                    <li>Diego ( Calango )</li>
+                    <li>Gabriel ( Dog )</li>
+                    <li>Vitor Hugo ( VT )</li>
+                </ul>
 
-            <footer>
-                <p>&copy; 2024 Bateteias - BTT </p>
-            </footer>
+                <div class="button-group">
+                    <button class="interactive-btn" onclick="showMembers()">👥 Ver Todos os Membros</button>
+                </div>
+            </section>
 
-            <script src="botoes.js"></script>
+            <section class="content-section">
+                <h2>🏆 Jogos </h2>
+                <p><strong>EA SPORTS FC 25</strong></p>
+                <p><strong>COUNTER STRIKE 2</strong></p>
+                <p><strong>Free Fire</strong></p>
+                <p><strong>VALORANT</strong></p>
+                <p><strong>PUBG</strong></p>
+                <p><strong>Call of Duty</strong></p>
+                <p><strong>FiveM</strong></p>
+                <p><strong>Fortnite</strong></p>
+                <p><strong>REEPO</strong></p>
+                <p><strong>THE CREW</strong></p>
+                <p><strong>EURO TRUCK</strong></p>
+                <p><strong>THE FOREST</strong></p>
 
-    </body>
+                <div class="button-group">
+                    <button class="interactive-btn" onclick="showEvents()">🎉 Eventos</button>
+                </div>
+            </section>
 
-    </html>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Bateteias - BTT </p>
+        </footer>
+
+        <script src="botoes.js"></script>
+
+</body>
+
+</html>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Create animated particles
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
