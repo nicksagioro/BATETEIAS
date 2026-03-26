@@ -1,4 +1,3 @@
-// Create animated particles
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 50;
@@ -14,7 +13,6 @@
             }
         }
 
-        // Show notification
         function showNotification(message) {
             const notification = document.getElementById('notification');
             notification.textContent = message;
@@ -25,16 +23,13 @@
             }, 3000);
         }
 
-        // Interactive button functions
         function joinTeam() {
             showNotification('Formulário de inscrição enviado! Bem-vindo ao time!');
-            // Add sparkle effect
             createSparkles();
         }
 
         function showDiscord() {
             showNotification('Redirecionando para o Discord do Bateteias...');
-            // In a real scenario, this would open Discord
         }
 
 
@@ -59,7 +54,6 @@
             showNotification('Estatística atualizada!');
         }
 
-        // Create sparkles effect
         function createSparkles() {
             for (let i = 0; i < 20; i++) {
                 const sparkle = document.createElement('div');
@@ -81,8 +75,6 @@
                 }, 2000);
             }
         }
-
-        // Calendar animation
         function animateCalendar() {
             const main = document.querySelector('main');
             main.style.animation = 'shake 0.5s';
@@ -92,7 +84,6 @@
             }, 500);
         }
 
-        // Add CSS animations
         const style = document.createElement('style');
         style.textContent = `
             @keyframes sparkle {
@@ -109,7 +100,6 @@
         `;
         document.head.appendChild(style);
 
-        // Smooth scrolling for links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -122,10 +112,8 @@
             });
         });
 
-        // Initialize particles when page loads
-        document.addEventListener('DOMContentLoaded', createParticles);
+=        document.addEventListener('DOMContentLoaded', createParticles);
 
-        // Add scroll effect to header
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -137,7 +125,6 @@
             }
         });
 
-        // Add hover effect to buttons
         document.querySelectorAll('.interactive-btn').forEach(button => {
             button.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-2px) scale(1.05)';
@@ -162,7 +149,6 @@
             }
         }
 
-        // Show notification
         function showNotification(message) {
             const notification = document.getElementById('notification');
             notification.textContent = message;
@@ -173,7 +159,6 @@
             }, 3000);
         }
 
-        // Interactive button functions
         function joinTeam() {
             showNotification('Formulário de inscrição enviado! Bem-vindo ao time!');
             // Add sparkle effect
@@ -182,7 +167,6 @@
 
         function showDiscord() {
             showNotification('Redirecionando para o Discord do Bateteias...');
-            // In a real scenario, this would open Discord
         }
 
 
@@ -214,7 +198,7 @@
             showNotification('Estatística atualizada!');
         }
 
-        // Create sparkles effect
+
         function createSparkles() {
             for (let i = 0; i < 20; i++) {
                 const sparkle = document.createElement('div');
@@ -237,7 +221,6 @@
             }
         }
 
-        // Calendar animation
         function animateCalendar() {
             const main = document.querySelector('main');
             main.style.animation = 'shake 0.5s';
@@ -247,7 +230,6 @@
             }, 500);
         }
 
-        // Add CSS animations
         const style = document.createElement('style');
         style.textContent = `
             @keyframes sparkle {
@@ -264,7 +246,6 @@
         `;
         document.head.appendChild(style);
 
-        // Smooth scrolling for links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -277,10 +258,9 @@
             });
         });
 
-        // Initialize particles when page loads
         document.addEventListener('DOMContentLoaded', createParticles);
 
-        // Add scroll effect to header
+
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -292,7 +272,6 @@
             }
         });
 
-        // Add hover effect to buttons
         document.querySelectorAll('.interactive-btn').forEach(button => {
             button.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-2px) scale(1.05)';
